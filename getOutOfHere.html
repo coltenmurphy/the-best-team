@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Draggable</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+
+    body {
+      background-image: url("steph.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      width: 600px;
+      height: 900px;
+    }
+
+    #draggable {
+      background-image: url("lebron.jpg");
+      width: 300px;
+      height: 600px;
+      padding: 0.5em;
+    };
+
+    #container {
+      background-image: url("steph.jpg");
+    };
+
+    </style>
+    <script>
+    $(function() {
+      $("#draggable").draggable();
+    });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="draggable" class="ui-widget-content">
+        <images src="steph.jpg">
+      </div>
+    </div>
+
+  </body>
+</html>
